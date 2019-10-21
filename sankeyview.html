@@ -13433,10 +13433,10 @@ div#notebook {
 
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">series_partition</span> <span class="o">=</span> <span class="n">Partition</span><span class="o">.</span><span class="n">Simple</span><span class="p">(</span><span class="s1">&#39;series&#39;</span><span class="p">,</span> <span class="p">[</span><span class="s1">&#39;1000&#39;</span><span class="p">,</span><span class="s1">&#39;2000&#39;</span><span class="p">])</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="c1">#series_partition = Partition.Simple(&#39;series&#39;, [&#39;1000&#39;,&#39;2000&#39;])</span>
 <span class="n">palette</span> <span class="o">=</span> <span class="p">{</span><span class="s1">&#39;1000&#39;</span><span class="p">:</span> <span class="s1">&#39;yellowgreen&#39;</span><span class="p">,</span> <span class="s1">&#39;2000&#39;</span><span class="p">:</span> <span class="s1">&#39;gold&#39;</span><span class="p">}</span>
 
-<span class="n">sdd</span> <span class="o">=</span> <span class="n">SankeyDefinition</span><span class="p">(</span><span class="n">nodes</span><span class="p">,</span> <span class="n">bundles</span><span class="p">,</span> <span class="n">ordering</span><span class="p">,</span> <span class="n">flow_partition</span><span class="o">=</span><span class="n">series_partition</span><span class="p">)</span>
+<span class="n">sdd</span> <span class="o">=</span> <span class="n">SankeyDefinition</span><span class="p">(</span><span class="n">nodes</span><span class="p">,</span> <span class="n">bundles</span><span class="p">,</span> <span class="n">ordering</span><span class="p">)</span>
 
 <span class="n">int_range</span> <span class="o">=</span> <span class="n">widgets</span><span class="o">.</span><span class="n">IntSlider</span><span class="p">(</span><span class="n">value</span><span class="o">=</span><span class="mi">0</span><span class="p">,</span><span class="nb">min</span><span class="o">=</span><span class="mi">0</span><span class="p">,</span><span class="nb">max</span><span class="o">=</span><span class="mi">1</span><span class="p">,</span><span class="n">step</span><span class="o">=</span><span class="mi">1</span><span class="p">)</span>
 <span class="n">output2</span> <span class="o">=</span> <span class="n">widgets</span><span class="o">.</span><span class="n">Output</span><span class="p">()</span>
